@@ -20,11 +20,12 @@ ANS:
 ---
 ## 4) How does destructuring assignment work in ES6?  
 ANS:
--Destructuring এর মাধ্যমে object বা array এর value আলাদা variable এ সহজে assign করা যায়।
-
+- **Destructuring** এর মাধ্যমে object বা array এর value আলাদা variable এ সহজে assign করা যায়।
+---
 
 ## 5) Explain template literals in ES6. How are they different from string concatenation?
+ANS:
+- Template literals backtick **(``)** দিয়ে লেখা হয়।
 
--Template literals backtick (``) দিয়ে লেখা হয়।
-
--এর মাধ্যমে multi-line string এবং variable interpolation সহজ হয়।
+- এর মাধ্যমে **multi-line string** এবং **variable interpolation** সহজ হয়।
+---
