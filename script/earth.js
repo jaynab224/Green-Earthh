@@ -17,17 +17,19 @@ const trees = () => {
     plants.forEach((tree) => {
       console.log(tree);
       allTrees.innerHTML += `
-        <div class="bg-white p-5">
-                        <img class=" mx-auto rounded-xl h-[400px]" src="${tree.image}">
-                        <h2 onclick="lodeModul(${tree.id})" class="font-bold mt-2 text-xl">${tree.name}</h2>
-                        <p class="text-sm  my-2">${tree.description}</p>
-                        <div class="flex justify-between mt-5">
-                            <button class="bg-[#DCFCE7] p-1 px-3 text-[#15803D] rounded-full">Shade Tree</button>
-                            <p class="font-semibold text-xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>${tree.price}</span></p>
-                            </div>
-                            <button class="bg-[#15803D] text-white w-full mt-5 py-2 rounded-full
-                             hover:bg-[#F97316] hover:text-white transition duration-300">Add to Cart</button>
-                    </div>
+        <div class="bg-white p-5 h-[550px] flex flex-col justify-between">
+  <img class="mx-auto rounded-xl h-[250px] object-cover" src="${tree.image}">
+  <h2 onclick="lodeModul(${tree.id})" class="font-bold mt-2 text-xl">${tree.name}</h2>
+  <p class="text-sm my-2 line-clamp-3">${tree.description}</p>
+  <div class="flex justify-between mt-5">
+    <button class="bg-[#DCFCE7] p-1 px-3 text-[#15803D] rounded-full">Fruit Tree</button>
+    <p class="font-semibold text-xl">
+      <i class="fa-solid fa-bangladeshi-taka-sign"></i><span>${tree.price}</span>
+    </p>
+  </div>
+  <button class="bg-[#15803D] text-white w-full mt-5 py-2 rounded-full
+    hover:bg-[#F97316] hover:text-white transition duration-300">Add to Cart</button>
+</div>
         `;
     });
   };
@@ -74,17 +76,27 @@ const lodeCatagory = (plants) => {
   allTrees.innerHTML = "";
   plants.forEach((pl) => {
     allTrees.innerHTML += `
-     <div class="bg-white p-5">
-                        <img class=" mx-auto rounded-xl h-[400px]" src="${pl.image}">
-                        <h2 onclick="lodeModul(${pl.id})" class="font-semibold mt-2 text-xl">${pl.name}</h2>
-                        <p class="text-sm my-2">${pl.description}</p>
-                        <div class="flex justify-between mt-5">
-                            <button class="bg-[#DCFCE7] p-1 px-3 text-[#15803D] rounded-full">Shade Trees</button>
-                            <p class="font-semibold text-xl text-[#15803D]"><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>${pl.price}</span></p>
-                            </div>
-                            <button id="cartBtn" class="bg-[#15803D] text-white w-full mt-5 py-2 rounded-full 
-                            h">Add to Cart</button>
-                    </div>
+     <div class="bg-white p-5 h-[550px] flex flex-col justify-between">
+  <img class="mx-auto rounded-xl h-[250px] w-full object-cover" src="${pl.image}">
+  
+  <h2 onclick="lodeModul(${pl.id})" class="font-semibold mt-2 text-xl">${pl.name}</h2>
+  
+  <p class="text-sm my-2 line-clamp-3">${pl.description}</p>
+  
+  <div class="flex justify-between mt-5">
+    <button class="bg-[#DCFCE7] p-1 px-3 text-[#15803D] rounded-full">Fruit Tree</button>
+    <p class="font-semibold text-xl text-[#15803D]">
+      <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+      <span>${pl.price}</span>
+    </p>
+  </div>
+  
+  <button id="cartBtn"
+    class="bg-[#15803D] text-white w-full mt-5 py-2 rounded-full hover:bg-[#F97316] hover:text-white transition duration-300">
+    Add to Cart
+  </button>
+</div>
+
     `;
   });
 };
