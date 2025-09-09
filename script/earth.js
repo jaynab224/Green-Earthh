@@ -23,7 +23,7 @@ const trees = () => {
                         <p class="text-sm  my-2">${tree.description}</p>
                         <div class="flex justify-between mt-5">
                             <button class="bg-[#DCFCE7] p-1 px-3 text-[#15803D] rounded-full">Shade Tree</button>
-                            <p class="font-semibold text-[#15803D] text-xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>${tree.price}</span></p>
+                            <p class="font-semibold text-xl"><i class="fa-solid fa-bangladeshi-taka-sign"></i><span>${tree.price}</span></p>
                             </div>
                             <button class="bg-[#15803D] text-white w-full mt-5 py-2 rounded-full
                              hover:bg-[#F97316] hover:text-white transition duration-300">Add to Cart</button>
